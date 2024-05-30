@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Humedad</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">Regresar</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="welcome-section">
+        <h1>Funcionamiento</h1>
+            <p>El IR LED emite luz infrarroja constantemente. Cuando un objeto se coloca frente al emisor,
+                la luz infrarroja se refleja hacia el diodo receptor infrarrojo. El diodo receptor infrarrojo
+                detecta la luz reflejada y genera una pequeña corriente proporcional a la intensidad de la luz recibida.
+                Esta señal débil se envía a uno de los amplificadores operacionales del LM358. El amplificador
+                operacionalincrementa la señal para que pueda ser procesada y utilizada para activar el LED. El
+                potenciómetro
+                de 10 KΩ está conectado para ajustar el umbral de detección. Al variar el potenciómetro, se cambia la
+                referencia del amplificador operacional, permitiendo ajustar cuánta luz reflejada es necesaria para
+                activarel LED. Esto permite que el detector sea más o menos sensible según sea necesario. La salida del
+                LM358
+                está conectada a un LED a través de una resistencia limitadora de corriente. Cuando la señal amplificada
+                del
+                receptor infrarrojo excede el umbral establecido, la salida del LM358 se activa, encendiendo el LED.
+                Esto proporciona una indicación visual clara de la detección de un objeto.</p>
+    </section>
+
+    <section class="projects-section">
+        <h2 class="projects-section-header">Sensor</h2>
+
+        <div class="projects-grid">
+            <video controls>
+                <source src="Recursos/VideoHumedad.mp4" type="video/mp4">
+                No compatible
+            </video>
+    </section>
+
+    <footer>
+        <p>
+            Este es nuestro proyecto para fisica II Electromagnetismo
+        </p>
+        <p>
+            &copy; Creado por <br>
+            Felipe, Javier, Santiago, Esteban y William.
+        </p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+
+</html>
