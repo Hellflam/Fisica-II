@@ -25,20 +25,7 @@
 
     <section class="welcome-section-2">
         <h1>Funcionamiento sensor humedad</h1>
-        <p>El IR LED emite luz infrarroja constantemente. Cuando un objeto se coloca frente al emisor,
-            la luz infrarroja se refleja hacia el diodo receptor infrarrojo. El diodo receptor infrarrojo
-            detecta la luz reflejada y genera una pequeña corriente proporcional a la intensidad de la luz recibida.
-            Esta señal débil se envía a uno de los amplificadores operacionales del LM358. El amplificador
-            operacionalincrementa la señal para que pueda ser procesada y utilizada para activar el LED. El
-            potenciómetro
-            de 10 KΩ está conectado para ajustar el umbral de detección. Al variar el potenciómetro, se cambia la
-            referencia del amplificador operacional, permitiendo ajustar cuánta luz reflejada es necesaria para
-            activarel LED. Esto permite que el detector sea más o menos sensible según sea necesario. La salida del
-            LM358
-            está conectada a un LED a través de una resistencia limitadora de corriente. Cuando la señal amplificada
-            del
-            receptor infrarrojo excede el umbral establecido, la salida del LM358 se activa, encendiendo el LED.
-            Esto proporciona una indicación visual clara de la detección de un objeto.</p>
+        <p>El circuito para detectar humedad funciona de la siguiente manera. Se insertan sondas metálicas en la tierra a una distancia determinada. Estas sondas actuarán como electrodos para medir la resistencia eléctrica del suelo. Los transistores 2N2222A se configuran en un circuito divisor de voltaje. Las sondas metálicas se conectan a los colectores de los transistores. Las resistencias se conectan entre los emisores de los transistores y a tierra. El circuito mide la resistencia eléctrica entre las sondas. Cuando el suelo está seco, la resistencia es alta. A medida que aumenta la humedad del suelo, la resistencia disminuye. El cambio en la resistencia del suelo se traduce en un cambio en el voltaje de salida del circuito. Si el voltaje de salida supera el umbral, indica que el suelo está húmedo. Esto puede activar una señal visual, como el encendido de un LED, o una señal audible, como una alarma.</p>
     </section>
 
     <section class="projects-section">
